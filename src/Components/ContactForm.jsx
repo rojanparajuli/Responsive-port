@@ -7,39 +7,42 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false);
   const form = useRef();
-  
+
   const sendEmail = (e) => {
+    console.log( form)
     e.preventDefault();
 
     emailjs.sendForm(
-      "whoisbl33h",
-      "template1",
+      "service_2uynzhl",
+      "template_wd6xt99",
       e.target,
-      "JjC_Nnt4rUsjIsRtz"
+      "K0Xo_l6xL5OMUJTji"
     )
       .then(
         (result) => {
           document.getElementById("contact_form").reset();
           setIsSent(true);
+          console.log('success', result);
           alert('Thank you I will get back to you as soon as possible ! (:');
         },
         (error) => {
+          console.log('error', error)
           console.error(error);
           setIsSent(false);
         }
       );
-  };  
+  };
 
   return (
     <div className="justify-center"
-  style={{
-    backgroundImage:
-      "url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png)",
-    width: "100%",
-    height: "95%",
-    boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
-  }}
->
+      style={{
+        backgroundImage:
+          "url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png)",
+        width: "100%",
+        height: "95%",
+        boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)"
+      }}
+    >
       <div>
         <h2
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
@@ -60,7 +63,7 @@ const ContactForm = () => {
           className="w-[80%] h-full flex flex-col gap-4 pt-4 text-primary-200"
         >
           <div className="w-full flex flex-col">
-          <label htmlFor="firstname" style={{ fontWeight: 'bold', fontSize: '18px' }}>First Name</label>
+            <label htmlFor="firstname" style={{ fontWeight: 'bold', fontSize: '18px' }}>First Name</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
               placeholder="Enter your First Name"
@@ -71,7 +74,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-          <label htmlFor="lastname" style={{ fontWeight: 'bold', fontSize: '18px' }}>Last Name</label>
+            <label htmlFor="lastname" style={{ fontWeight: 'bold', fontSize: '18px' }}>Last Name</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
               placeholder="Enter your Last Name"
@@ -82,7 +85,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-          <label htmlFor="email" style={{ fontWeight: 'bold', fontSize: '18px' }}>E-mail</label>
+            <label htmlFor="email" style={{ fontWeight: 'bold', fontSize: '18px' }}>E-mail</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950 bg-primary-200"
               placeholder="Enter your E-mail"
@@ -93,7 +96,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-          <label htmlFor="message" style={{ fontWeight: 'bold', fontSize: '18px' }}>Message</label>
+            <label htmlFor="message" style={{ fontWeight: 'bold', fontSize: '18px' }}>Message</label>
             <textarea
               className="p-[0.5em] rounded-xl text-grayscale-950 bac bg-primary-200"
               placeholder="Enter your message..."
@@ -102,11 +105,11 @@ const ContactForm = () => {
             ></textarea>
           </div>
           <div className="w-full flex justify-center">
-          <input
-            className="w-[100px] h-[50px] bg-primary-400 rounded-xl cursor-pointer hover:bg-primary-700 mb-5"
-            type="submit"
-            value={!isSent ? 'Send' : 'Done!'}
-          />
+            <input
+              className="w-[100px] h-[50px] bg-primary-400 rounded-xl cursor-pointer hover:bg-primary-700 mb-5"
+              type="submit"
+              value={!isSent ? 'Send' : 'Done!'}
+            />
           </div>
         </form>
       </div>
