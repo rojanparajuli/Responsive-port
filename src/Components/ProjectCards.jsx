@@ -1,11 +1,4 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: ProjectCards.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 19/04/2024
-*/
+
 
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
@@ -154,7 +147,7 @@ const ProjectCard = ({
                       href={demo_link}
                       target="_blank"
                   >
-                      See the Demo
+                      See More
                   </a>
               </div>
           </motion.div>
