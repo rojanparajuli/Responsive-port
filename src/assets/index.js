@@ -30,11 +30,9 @@ import raspIcon from './tech/raspi.png';
 import close from './close.svg';
 import menu from './menu.svg';
 
-// Projects
 import pawsitivePrototype from './projects/pawsitive.jpeg';
 import memoryGame from './projects/memory.jpg';
 
-// Avatar
 import avatar from './avatar/avatar.png';
 
 export {
