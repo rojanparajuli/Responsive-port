@@ -1,5 +1,3 @@
-
-
 import { useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
@@ -9,7 +7,7 @@ const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    console.log( form)
+    console.log(form)
     e.preventDefault();
 
     emailjs.sendForm(
