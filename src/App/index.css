@@ -45,13 +45,13 @@ body {
 #repulse-div {
   -webkit-appearance: none;
   appearance: none;
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #9c838f);
+  -webkit-filter: drop-shadow(0 0 5rem #ffffff);
+  filter: drop-shadow(0 0 5rem #ffffff);
 }
 
 #repulse-div > h1 {
-  -webkit-filter: drop-shadow(0 0 5rem #eec5d9);
-  filter: drop-shadow(0 0 5rem #e5dee1);
+  -webkit-filter: drop-shadow(0 0 5rem #7cacdf);
+  filter: drop-shadow(0 0 5rem #ffffff);
 }
 
 #journey-scroll::-webkit-scrollbar {
@@ -118,7 +118,7 @@ polyline {
 .bounce:hover {
   display: inline-block;
   animation: rubberband 0.8s ease-out;
-  color: #eae0e5;
+  color: #ffffff;
 }
 
 @keyframes rubberband {
@@ -149,15 +149,15 @@ polyline {
   .drop-shadow-div {
     -webkit-appearance: none;
     appearance: none;
-    -webkit-filter: drop-shadow(0 0 1.5rem #eec5d9);
-    filter: drop-shadow(0 0 1.5rem #eec5d9);
+    -webkit-filter: drop-shadow(0 0 1.5rem #ffffff);
+    filter: drop-shadow(0 0 1.5rem #65a8ce);
   }
 }
 
 .loader {
   width: 100px;
   height: 100px;
-  border: 5px solid #ecdce3;
+  border: 5px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
   position: relative;
