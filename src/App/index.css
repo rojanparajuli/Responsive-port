@@ -89,7 +89,7 @@ polyline {
   border-collapse: separate;
   background-size: cover;
   background-position: center;
-  outline: 1px #e3d8de;
+  outline: 1px #ffffff;
 }
 
 @keyframes morph {
@@ -173,7 +173,7 @@ polyline {
   height: 80px;
   border-radius: 50%;
   border: 5px solid;
-  border-color: #B64D80 transparent;
+  border-color: #0e6aec transparent;
 }
 
 @keyframes rotation {
