@@ -148,7 +148,7 @@ const projects = [
   {
     name: 'Youtube Video on Git and Github',
     description: "This YouTube video, created by Rojan Parajuly, provides a comprehensive guide to Git and GitHub, making it perfect for beginners looking to understand version control and collaboration in software development. The video covers essential topics such as setting up Git, basic Git commands, creating repositories, and pushing changes to GitHub. It also demonstrates how to effectively collaborate with others using GitHub's features like branches, pull requests, and version history. With clear explanations and practical examples, this tutorial helps viewers master Git and GitHub for seamless development workflows. Ideal for anyone looking to start using version control in their projects.",
-    image: "https://yt3.ggpht.com/eA5M8xS6XMcWFZN42p2byKfTPAkoP5EPwJsRsNVWFUPBECgL-uWXSZlN7TJLcBLole9bizsN=s600-c-k-c0x00ffffff-no-rj-rp-mo",
+    image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
     source_code_link: 'https://www.youtube.com/watch?v=Cmz6D57OPGc',
     demo_link: 'https://www.youtube.com/watch?v=Cmz6D57OPGc',
   },
