@@ -5,6 +5,7 @@ import SectionTitle from "../Components/SectionTitle";
 import { memoji } from "../Constants/constants";
 import { introduction } from "../Constants/constants";
 import ImageSlider from "../Components/elements/ImageSlider";
+// import api from "../Components/api/api";
 
 const About = () => {
   return (
